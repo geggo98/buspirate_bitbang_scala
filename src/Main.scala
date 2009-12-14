@@ -33,6 +33,8 @@ object Main {
 					//serialPort.addEventListener(new SerialReader(in));
 					serialPort.notifyOnDataAvailable(true)
 					println("Serial port opened")
+					serialPort.close()
+					System.exit(0)
 				case _ => println("Error: Only serial ports are handled by this example.")
 			}
 		}
