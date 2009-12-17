@@ -13,6 +13,9 @@ class ReadSerialPort(that : SerialPort) extends SerialPortEventListener {
 	val serialPort : SerialPort = that
 	val fromPort : InputStream = that.getInputStream
 
+	serialPort.addEventListener(this)
+	serialPort.notifyOnDataAvailable(true)
+
 	override def serialEvent(event : SerialPortEvent) {
 		event.getEventType match {
 			case SerialPortEvent.DATA_AVAILABLE => readData
