@@ -13,17 +13,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="scala-2.7.6" level="project" />
-    <orderEntry type="module-library" scope="PROVIDED">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../Library/Java/Extensions/RXTXcomm.jar!/" />
-        </CLASSES>
-        <JAVADOC>
-          <root url="http://users.frii.com/jarvi/rxtx/doc/index.html" />
-        </JAVADOC>
-        <SOURCES />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="RXTX" level="application" />
   </component>
 </module>
 
